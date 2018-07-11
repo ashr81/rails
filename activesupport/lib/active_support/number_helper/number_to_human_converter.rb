@@ -4,7 +4,7 @@ module ActiveSupport
   module NumberHelper
     class NumberToHumanConverter < NumberConverter # :nodoc:
       DECIMAL_UNITS = { 0 => :unit, 1 => :ten, 2 => :hundred, 3 => :thousand, 6 => :million, 9 => :billion, 12 => :trillion, 15 => :quadrillion,
-        -1 => :deci, -2 => :centi, -3 => :mili, -6 => :micro, -9 => :nano, -12 => :pico, -15 => :femto }
+        -1 => :deci, -2 => :centi, -3 => :milli, -6 => :micro, -9 => :nano, -12 => :pico, -15 => :femto }
       INVERTED_DECIMAL_UNITS = DECIMAL_UNITS.invert
 
       self.namespace      = :human
